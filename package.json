@@ -1,0 +1,31 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelenELee/team-profile-generator.git"
+  },
+  "keywords": [
+    "node.js",
+    "inquirer",
+    "jest"
+  ],
+  "author": "Helen Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HelenELee/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/HelenELee/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
