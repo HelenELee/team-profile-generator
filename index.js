@@ -16,11 +16,6 @@ const managerQuestions = questionModule.managerQuestions;
 const questions = questionModule.questions;*/
 let teamArray = [];
 
-//add manager details to the team Array
-function addManager(mgrObj) {
-    delete mgrObj.welcome;
-}
-
 function generateHTML(team){
     let teamTemplate = '';
     for (let i=0; i<team.length-1; i++) {

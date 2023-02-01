@@ -33,13 +33,10 @@ body {
 
 header { 
   background-color: var(--red-pink);
-  color: #ffffff;  
+  color: #ffffff; 
+  margin-bottom: 20px; 
 }
  
-nav {
-  vertical-align: middle;
-}
-
 main {
   width:100%;
 }
@@ -100,7 +97,6 @@ h5 {
 }
 
 .card-header {
- /*border:solid 1px black;*/
   background-color: var(--strong-blue);
   color: var(--white);
   padding: 10px;
@@ -109,14 +105,12 @@ h5 {
 }
 
 .card-body {
- /* border:solid 1px black;*/
   padding: 0px;
   border-radius:0px 0px 15px 15px;
   height: 110px;
 }
 
 .person-table {
-  /*background-color: var(--light-grey);*/
   background-color: #F0F0F0;
   border: 1px;
   border-radius:0px 0px 15px 15px;
