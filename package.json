@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,10 @@
   },
   "homepage": "https://github.com/HelenELee/team-profile-generator#readme",
   "dependencies": {
+    "github-username-regex": "^1.0.0",
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.4.1"
   }
 }
