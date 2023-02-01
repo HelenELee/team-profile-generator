@@ -11,9 +11,7 @@ const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
 
 const fileName = "index.html";
-/*
-const managerQuestions = questionModule.managerQuestions;
-const questions = questionModule.questions;*/
+
 let teamArray = [];
 
 function generateHTML(team){
@@ -28,7 +26,7 @@ function generateHTML(team){
 // function to write data to file
 function createFile(fileName, text) {
     fs.writeFile(fileName, text, (err) =>
-      err ? console.error(err) : console.log(`Your Team Profile file called ${fileName} has been created!`)
+      err ? console.error(err) : console.log(`Your Team Profile file called "${fileName}" has been created!`)
       )
   }
 
@@ -53,48 +51,29 @@ function getTeamMembers() {
             teamArray.push(employee);
             getTeamMembers();
         } else {
-            console.log("GetTeamMember 2")
-            //console.log ("Your file will be generated now!");
-           // console.log("teamArray - " + teamArray);
-           //console.log(teamArray);
-           //return teamArray;
-           return generateHTML(teamArray);
+            //push last object to array
+            teamArray.push(employee);
+            return generateHTML(teamArray);
         }
 
     })
     .then((response) => {
-        console.log("GetTeamMember 3");
-
         createFile(fileName, response);
-        console.log ("Your file has been generated!");
-        //console.log(response);
     })
     .catch(function(error) {
-        console.log("Goodbye - from getTeamMembers!"); //catch any errors and exit gracefully
+        console.log("Goodbye!"); //catch any errors and exit gracefully
     })
-    /*
-    .then((response) => {
-        console.log("Last then of getTeamMembers");
-        
-    })*/
+    
 }
 
 // function to initialize app
 function init() {
     inquirer
   .prompt(managerQuestions) //questions is the array of questions, pass to inquirer
-  /*
-  .then((response) => {
-    //console.log(response);
-    return response;
-  })
-  */
+  
   .then((response) => {
     if (response.welcome === true) {
-       // console.log(response);
-       let mgr = new Manager(response.name, response.id, response.email, response.number);
-        //response.role = "Manager";
-        //delete response.welcome;
+        let mgr = new Manager(response.name, response.id, response.email, response.number);
         teamArray.push(mgr);
         getTeamMembers();
     } else {
@@ -103,9 +82,7 @@ function init() {
         console.log("Goodbye!");
     }
   })
-  .then((response)=> {
-    console.log("Last then of init");
-  })
+  
   .catch(function(error) {
     console.log("Goodbye!"); //catch any errors and exit gracefully
 })
