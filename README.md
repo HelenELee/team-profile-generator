@@ -104,7 +104,7 @@ The user is initially provided with some information on how the application work
 
 ![Here is a screenshot of the application instructions.](./images/welcome.png)
 
-Most questions have validation and if the users input fails validation, the user will be informed via a message written in red. Validation includes checking ID and Office number are numeric, email and github are valid and no fields are left blank. The relevent questions will be presented depending on which type of employee is being input eg github for engineers and school for interns. 
+Most questions have validation and if the users input fails validation, the user will be informed via a message written in red. Validation includes checking ID and Office Number are numeric, Email and Github are valid and no fields are left blank. The relevent questions will be presented depending on which type of employee is being input eg github for engineers and school for interns. 
 
 ![Here is a screenshot of the application validation.](./images/errors.png)
 
