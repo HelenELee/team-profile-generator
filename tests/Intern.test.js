@@ -1,15 +1,20 @@
+//tests  for Intern class
 const Intern = require("../lib/Intern.js");
 
 describe("Intern", () => {
+  //test consructor
     describe("Initialization", () => {
         it("should return an object containing a 'name', 'id','email' and 'school' properties when called with the 'new' keyword", () => {
+            //arrange
             const name = "John";
             const id = 1;
             const email = "John@mail.com";
             const school = "UWA";
 
+            //act
             const obj = new Intern(name, id, email, school);
     
+            //assert
             expect(obj.name).toBe("John");
             expect(obj.id).toBe(1);
             expect(obj.email).toBe("John@mail.com");

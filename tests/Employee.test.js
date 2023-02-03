@@ -1,14 +1,21 @@
+//tests for Employee class
 const Employee = require("../lib/Employee.js");
 
 describe("Employee", () => {
+
+
+    //test constructor
     describe("Initialization", () => {
         it("should return an object containing a 'name', 'id' and 'email' properties when called with the 'new' keyword", () => {
+            //arrange
             const name = "John";
             const id = 1;
             const email = "John@mail.com";
 
+            //act
             const obj = new Employee(name, id, email);
-    
+
+            //assert
             expect(obj.name).toBe("John");
             expect(obj.id).toBe(1);
             expect(obj.email).toBe("John@mail.com");
@@ -63,8 +70,6 @@ describe("Employee", () => {
             
         });
       });
-
-
 
 }
 )

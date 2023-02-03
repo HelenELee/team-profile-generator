@@ -1,15 +1,21 @@
+//test scripts for Manager class
+
 const Manager = require("../lib/Manager.js");
 
 describe("Manager", () => {
+  //test constructor
     describe("Initialization", () => {
         it("should return an object containing a 'name', 'id','email' and 'office number' properties when called with the 'new' keyword", () => {
+            //arrange
             const name = "John";
             const id = 1;
             const email = "John@mail.com";
             const number = 33;
 
+            //act
             const obj = new Manager(name, id, email, number);
-    
+
+            //assert
             expect(obj.name).toBe("John");
             expect(obj.id).toBe(1);
             expect(obj.email).toBe("John@mail.com");

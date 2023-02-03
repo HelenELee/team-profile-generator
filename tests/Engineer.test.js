@@ -1,15 +1,20 @@
+//tests for Engineer class
 const Engineer = require("../lib/Engineer.js");
 
 describe("Engineer", () => {
+  //test constructor
     describe("Initialization", () => {
         it("should return an object containing a 'name', 'id', 'email' and 'github' properties when called with the 'new' keyword", () => {
+            //arrange
             const name = "John";
             const id = 1;
             const email = "John@mail.com";
             const github = "johnB";
 
+            //act
             const obj = new Engineer(name, id, email, github);
     
+            //assert
             expect(obj.name).toBe("John");
             expect(obj.id).toBe(1);
             expect(obj.email).toBe("John@mail.com");
@@ -82,6 +87,7 @@ describe("Engineer", () => {
             
         });
       });
+
 
 }
 )
