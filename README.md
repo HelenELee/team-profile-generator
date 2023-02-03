@@ -118,7 +118,7 @@ Once all the questions have been answered the index.html file will be generated.
 
   Below is the Team Profile webpage:
 
-  ![Here is a screenshot of the team profile webpage.](./images/options.png)
+  ![Here is a screenshot of the team profile webpage.](./images/team-profile.png)
   
   Below is a link to a video recording of how the application works.
 
