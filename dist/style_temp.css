@@ -1,0 +1,145 @@
+:root {
+    --white: white;
+    --strong-blue:#1561ad;
+    --red-pink:#E84756;
+    --mid-grey:#D3D3D3;
+    --light-grey: #F0F0F0;
+    --black: #000000;
+  }
+  
+  * {
+    border:0px solid;
+  }
+/* set default font to 10px */
+html{
+  height: 100%;
+  font-size: 62.5%;
+  font-weight: 700;
+}
+
+  
+body {
+  /*font-family: Arial, sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0px;
+  line-height: 1.5;
+  width: 100%;  
+  font-weight: 400;
+  font-size: 2.75rem;
+  min-height: 100vh;
+}
+
+header { 
+  background-color: var(--red-pink);
+  color: var(--white); 
+  margin-bottom: 20px; 
+}
+ 
+main {
+  width:100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+}
+ 
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  display:inline-block;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* set nav height */
+.header-class {
+  height: 75px;
+}
+
+.main-container {
+  width:50%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.person-card {
+  margin: 1px;
+  flex:1, 1, 20%;
+  color: var(--white);
+  padding: 1px;
+  min-width: 200px;
+  box-shadow: 10px 10px 5px var(--mid-grey);;
+  border-radius:15px;
+}
+
+.card-header {
+  background-color: var(--strong-blue);
+  color: var(--white);
+  padding: 10px;
+  border-radius:15px 15px 0px 0px;
+  height: 100px;
+}
+
+.card-body {
+  padding: 0px;
+  border-radius:0px 0px 15px 15px;
+  height: 110px;
+}
+
+.person-table {
+  background-color: var(--light-grey);
+  border: 1px;
+  border-radius:0px 0px 15px 15px;
+  padding:10px;
+  height: 100%;
+  width: 100%;
+  flex: wrap;
+}
+
+tr.border_bottom td {
+  border-bottom: 1px solid var(--black);
+}
+
+/* iPads, Tablets */
+
+@media screen and (max-width: 768px) {
+
+  }
+  
+  /* Smartphones  */
+  
+@media screen and (max-width: 576px) {
+
+
+   .main-container {
+      flex-direction:column;
+    }
+
+    .person-card {
+      width: 50%;
+      
+    }
+}
+

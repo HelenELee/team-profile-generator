@@ -1,147 +1,144 @@
 :root {
-    --space-grey: #33393f;
-    --white: white;
-    --strong-blue:#1561ad;
-    --muted-blue:#1c77ac;
-    --blue-green:#1dbab4;
-    --red-orange:#fc5226;
-    --red-pink:#E84756;
-    --light-grey:#D3D3D3;
-  }
-  
-  * {
-    border:0px solid;
-  }
-/* set default font to 10px */
-html{
-  height: 100%;
-  font-size: 62.5%;
-  font-weight: 700;
+  --white: white;
+  --strong-blue:#1561ad;
+  --red-pink:#E84756;
+  --mid-grey:#D3D3D3;
+  --light-grey: #F0F0F0;
+  --black: #000000;
 }
 
-  
+* {
+  border:0px solid;
+}
+/* set default font to 10px */
+html{
+height: 100%;
+font-size: 62.5%;
+font-weight: 700;
+}
+
+
 body {
-  /*font-family: Arial, sans-serif;*/
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 0px;
-  line-height: 1.5;
-  width: 100%;  
-  font-weight: 400;
-  font-size: 2.75rem;
-  min-height: 100vh;
+font-family: 'Roboto Condensed', sans-serif;
+margin: 0px;
+line-height: 1.5;
+width: 100%;  
+font-weight: 400;
+font-size: 2.75rem;
+min-height: 100vh;
 }
 
 header { 
-  background-color: var(--red-pink);
-  color: #ffffff; 
-  margin-bottom: 20px; 
+background-color: var(--red-pink);
+color: var(--white); 
+margin-bottom: 20px; 
 }
- 
+
 main {
-  width:100%;
+width:100%;
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--white);
+font-size: 4rem;
+font-weight: 700;
+text-align: center;
+color: var(--white);
 }
- 
+
 h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+font-size: 2.5rem;
+font-weight: bold;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 400;
+font-size: 2rem;
+font-weight: 400;
 }
 
 h4 {
-  font-size: 1.75rem;
-  font-weight: 400;
-  display:inline-block;
+font-size: 1.75rem;
+font-weight: 400;
+display:inline-block;
 }
 
 h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
+font-size: 1.5rem;
+font-weight: 400;
 }
 
 /* set nav height */
 .header-class {
-  height: 75px;
+height: 75px;
 }
-
+/*flex container - contains the team cards */
 .main-container {
-  width:50%;
-  display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: auto;
-}
+width:50%;
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
 
+align-items: center;
+justify-content: center;
+gap: 30px;
+margin: auto;
+}
+/*employee card*/
 .person-card {
-  margin: 1px;
-  flex:1, 1, 20%;
-  color: var(--white);
-  padding: 1px;
-  min-width: 200px;
-  box-shadow: 10px 10px 5px #D3D3D3;
-  border-radius:15px;
+margin: 1px;
+flex:1, 1, 20%;
+color: var(--white);
+padding: 1px;
+min-width: 200px;
+box-shadow: 10px 10px 5px var(--mid-grey);;
+border-radius:15px;
 }
-
+/*employee card in two parts*/
 .card-header {
-  background-color: var(--strong-blue);
-  color: var(--white);
-  padding: 10px;
-  border-radius:15px 15px 0px 0px;
-  height: 100px;
+background-color: var(--strong-blue);
+color: var(--white);
+padding: 10px;
+border-radius:15px 15px 0px 0px;
+height: 100px;
 }
 
 .card-body {
-  padding: 0px;
-  border-radius:0px 0px 15px 15px;
-  height: 110px;
+padding: 0px;
+border-radius:0px 0px 15px 15px;
+height: 110px;
 }
-
+/*table holds details of each employee - name, id, email etc*/
 .person-table {
-  background-color: #F0F0F0;
-  border: 1px;
-  border-radius:0px 0px 15px 15px;
-  padding:10px;
-  height: 100%;
-  width: 100%;
-  flex: wrap;
+background-color: var(--light-grey);
+border: 1px;
+border-radius:0px 0px 15px 15px;
+padding:10px;
+height: 100%;
+width: 100%;
+flex: wrap;
 }
-
+/*create line at botom of each table row*/
 tr.border_bottom td {
-  border-bottom: 1px solid black;
+border-bottom: 1px solid var(--black);
 }
 
 /* iPads, Tablets */
 
 @media screen and (max-width: 768px) {
 
-  }
-  
-  /* Smartphones  */
-  
+}
+
+/* Smartphones  */
+
 @media screen and (max-width: 576px) {
 
 
-   .main-container {
-      flex-direction:column;
-    }
+ .main-container {
+    flex-direction:column;
+  }
 
-    .person-card {
-      width: 50%;
-      
-    }
+  .person-card {
+    width: 50%;
+    
+  }
 }
 
