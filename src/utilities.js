@@ -1,3 +1,4 @@
+//validates email - used in questions.js
 function validateEmail(email) {
 	
 	var regexp =  /^([A-Za-z0-9_\-\.\'])+\@([A-Za-z0-9_\-\.\'])+\.([A-Za-z]{2,18})$/;

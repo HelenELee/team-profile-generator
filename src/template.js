@@ -1,3 +1,5 @@
+//contains Template Literal used for HTML formatting of index.html
+//exported and used in index.js in generateHTML function
 
 function fillInTemplate(templateValue){
   const template = `<html lang="en">
@@ -32,11 +34,6 @@ function fillInTemplate(templateValue){
             <!--end team Card-->                  
         </section>
       </main>
-      
-      <!-- jQuery jquery tag -->
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      
       <script src="https://kit.fontawesome.com/b3cf47db47.js" crossorigin="anonymous"></script>
       
     </body>
