@@ -46,7 +46,7 @@ function generateEmployeeHTML(empType) {
     const empTemplate = `
             <section class="person-card">
                 <div class="card-header"><h3>${empType.getName()}</h3>
-                <i class="${icon}"></i> <h4>${empType.getRole()}</h4>
+                <i class="${icon}" aria-hidden="true"></i><span class="sr-only">Image</span> <h4>${empType.getRole()}</h4>
                 </div>
                 <div class="card-body">
                     <table class="person-table">
